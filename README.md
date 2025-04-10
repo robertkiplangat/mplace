@@ -8,18 +8,12 @@ The **USIU-A Marketplace** is a web-based platform designed to facilitate buying
 
 ## Technologies Used
 
-The following technologies and tools are used in this project:
+The following technologies were used to develop this project:
 
-- **Frontend**:
+- **PHP**: The backend of the application is built with PHP, handling the server-side logic, user authentication, and database interactions.
+- **MySQL**: A relational database system used to store user data, product listings, and transaction information.
+- **CSS**: Used for styling the web pages, ensuring a responsive and visually appealing user interface across all devices.
 
-  - **React.js**: A JavaScript library for building user interfaces, providing a fast and responsive experience for the user.
-  - **TypeScript**: A superset of JavaScript that adds type safety, helping to catch errors early during development.
-  - **Bootstrap**: A front-end framework for responsive design, ensuring the marketplace is mobile-friendly and looks good on all devices.
-
-- **Backend**:
-
-  - **PHP**: The backend of the application is built with PHP, managing the server-side logic, user authentication, and database interactions.
-  - **MySQL**: A relational database system used to store user data, product listings, and transaction information.
 
 - **Tools**:
   - **Git**: Version control system for managing the source code.
@@ -38,13 +32,16 @@ The following technologies and tools are used in this project:
 
 ---
 
+Here's the updated **Installation** section reflecting that only PHP, MySQL, and CSS were used, removing any mention of Node.js, React, and npm:
+
+---
+
 ## Installation
 
 ### Prerequisites
 
 Before running the project locally, ensure the following are installed on your machine:
 
-- **Node.js**: Install from [nodejs.org](https://nodejs.org/).
 - **PHP**: Install PHP from [php.net](https://www.php.net/).
 - **MySQL**: Install MySQL from [mysql.com](https://www.mysql.com/).
 
@@ -57,15 +54,7 @@ Before running the project locally, ensure the following are installed on your m
    git clone https://github.com/robertkiplangat/mplace.git
    ```
 
-2. **Install Dependencies for Frontend**:
-   Navigate to the frontend directory and install the necessary npm dependencies:
-
-   ```bash
-   cd campus-marketplace/frontend
-   npm install
-   ```
-
-3. **Set Up Backend (PHP and MySQL)**:
+2. **Set Up Backend (PHP and MySQL)**:
 
    - Place the PHP files in a directory accessible by your Apache or Nginx server.
    - Set up your MySQL database and import the provided SQL file to create the required tables. You can use the following command to create the database:
@@ -78,27 +67,24 @@ Before running the project locally, ensure the following are installed on your m
      mysql -u root -p marketplace < path/to/database_schema.sql
      ```
 
-4. **Configure Database Connection**:
-   In the backend folder, ensure the database connection details are correct. Modify the `config.php` file to match your database credentials.
+3. **Configure Database Connection**:
+   In the PHP files, ensure the correct database credentials are set in the configuration file to connect to your MySQL database.
 
-5. **Start the Development Server**:
-   Navigate to the frontend directory and run:
-
+4. **Start the PHP Server**:
+   You can use the built-in PHP server for development by running the following command from the root project directory:
    ```bash
-   npm start
+   php -S localhost:8000
    ```
 
-   This will start the React development server, typically at `http://localhost:3000`.
-
-6. **Start MySQL Server**:
+5. **Start MySQL Server**:
    Ensure your MySQL server is running. You can start it with the following command:
 
    ```bash
    mysql.server start
    ```
 
-7. **Access the Application**:
-   Open a browser and go to `http://localhost:3000` to view the application.
+6. **Access the Application**:
+   Open a browser and go to `http://localhost:8000` to view the application.
 
 ---
 

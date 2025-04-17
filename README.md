@@ -138,7 +138,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Project Features**: Describes the core features and functionality of the marketplace.
 - **Installation**: Details the steps required to get the project up and running, including prerequisites and setup.
 - **How to Use**: Instructions for the users to interact with the application.
+<<<<<<< HEAD
 - **Contributing**: Encouragement for collaboration and contributions.
+=======
+- **Contributing**: Encouragement for collaboration and contributions widely.
+>>>>>>> 21eb294 (Final commit)
 - **License**: If applicable, mention the project license (MIT in this case).
 - **Acknowledgments**: Credits and thanks for tools and communities used.
 - **Contact**: Information for reaching out for questions or feedback.
